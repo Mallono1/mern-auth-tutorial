@@ -4,7 +4,7 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 import { connect } from "mongoose";
 import connectDB from "./config/mongodb.js";
-import authRouter from "./routes/auth.js";
+import authRouter from "./routes/authRoutes.js";
 
 const app = express();
 const port = process.env.PORT || 5000; // default port to listen
